@@ -37,10 +37,14 @@ nav {
 }
 
 .logo-elim {
-
-    width: 120px;
-    margin-right: 20px;
+    width: 180px;
+    position: fixed; /* Fissa il logo nella posizione desiderata */
+    top: 10px; /* Posiziona il logo in alto */
+    left: 10px; /* Posiziona il logo a sinistra */
+    z-index: 1000; /* Assicura che il logo sia sopra gli altri elementi */
 }
+
+
 
 .bar-btn {
 
@@ -52,17 +56,15 @@ nav {
 }
 
 .nav-menu {
-
-    position: fixed;
-    width: 100%;
-    height: 0vh;
-    top: 100px;
-    background: rgb(60, 60, 60, 0.95);
+    position: fixed; /* Fissa il menu nella posizione desiderata */
+    top: 0; /* Posiziona il menu all'inizio della pagina */
+    left: 0; /* Posiziona il menu all'inizio della pagina */
+    width: 100%; /* Assicura che il menu occupi l'intera larghezza della pagina */
+    background: black; /* Imposta lo sfondo nero */
     text-align: center;
     transition: all 0.5s;
-
-
 }
+
 
 .nav-menu li {
 
@@ -148,15 +150,15 @@ nav {
     }
 
     .nav-menu {
-        position: relative;
-        height: 100px;
-        top: 0;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
+        position: fixed; /* Fissa il menu nella posizione desiderata */
+        top: 0; /* Posiziona il menu all'inizio della pagina */
+        left: 0; /* Posiziona il menu all'inizio della pagina */
+        width: 100%; /* Assicura che il menu occupi l'intera larghezza della pagina */
+        background: rgb(60, 60, 60, 0.95);
+        text-align: center;
+        transition: all 0.5s;
     }
-
+    
     .nav-menu li {
 
         display: inline-block;
